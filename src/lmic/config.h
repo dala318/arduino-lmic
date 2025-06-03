@@ -57,6 +57,7 @@
 
 // ensure that a radio is defined.
 #if defined(CFG_external_radio)
+# warning "Compiling with External radion definitions, make sure to supply the necessary function definitions"
 #if defined(CFG_sx1272_radio) || defined(CFG_sx1276_radio) || defined(CFG_sx1261_radio) || defined(CFG_sx1262_radio)
 # error "You cannot define CFG_external_radio and a target radio at the same time"
 #endif
